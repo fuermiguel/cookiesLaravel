@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('personalizacion', 'PersonalizacionController@personalizar');
+
+Route::post('personalizacion', 'PersonalizacionController@guardarpersonalizacion');
+
+Route::get('idioma', 'IdiomaController@personalizar');
+
+Route::post('idioma', 'IdiomaController@guardarpersonalizacion');
